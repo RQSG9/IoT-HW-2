@@ -98,3 +98,7 @@
  - 이 예제의 가장 큰 특징은 outer가 내부 함수 inner 자체를 반환한다는 점
  - outer 함수는 실행이 종료되지만, 반환된 inner 함수는 자신이 선언될 당시의 Lexical Environment에 대한 참조outerEnvironmentReference를 계속 유지
  - 클로저: 어떤 함수 A에서 선언한 변수 a를 참조하는 내부 변수 B를 외부로 전달할 경우 A의 실행 컨텍스트가 종료된 이후에도 변수 a가 사라지지 않는 현상
+
+### EX 5-4
+ - return 없이도 클로저가 발생하는 경우를 보여주는 예제
+ - setInterval나 addEventListener와 같이 비동기적으로 실행되는 콜백 함수에서 클로저가 어떻게 상태를 유지하고 관리하는 데 사용되는지 보여줌
