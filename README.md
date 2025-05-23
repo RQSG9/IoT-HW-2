@@ -53,3 +53,6 @@
  - var self = this;를 통해 this를 바인딩했을 경우의 유연성과 재사용성 확인
  - obj2.func()를 호출하면, obj1.func 내부의 this는 obj2
  - obj1.func.call(obj3)는 .call 메서드를 사용하여 obj1.func를 실행할 때 this 값을 강제로 obj3로 지정
+
+### EX 4-11
+ - bind 메서드를 사용하여 콜백 함수의 this 값을 명시적으로 지정하는 방법
