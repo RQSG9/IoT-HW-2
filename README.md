@@ -48,3 +48,8 @@
 ### EX 4-9
  - this를 사용하는 대신, 콜백 함수에서 직접 obj1.name과 같이 객체 변수를 참조하여 문제를 회피하는 간단한 방법
  - 다양한 상황에 재활용 불가능
+
+### EX 4-10
+ - var self = this;를 통해 this를 바인딩했을 경우의 유연성과 재사용성 확인
+ - obj2.func()를 호출하면, obj1.func 내부의 this는 obj2
+ - obj1.func.call(obj3)는 .call 메서드를 사용하여 obj1.func를 실행할 때 this 값을 강제로 obj3로 지정
