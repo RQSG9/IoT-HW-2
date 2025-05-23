@@ -27,3 +27,9 @@
 ### EX 4-5
  - Array.prototype.map 메서드 직접 구현
  - 구현된 map 함수는 사용자 정의 콜백 함수를 호출할 때, 표준 map 메서드와 동일하게 현재 요소 값(this[i]), 현재 인덱스(i), 그리고 원본 배열(this)을 순서대로 전달
+
+### EX 4-6
+ - 다양한 상황에서 콜백 함수 내부의 this 결정
+ - setTimeout에 전달된 콜백 함수 내에서 this는 전역 객체
+ - forEach 메서드에 두 번째 인자로 this 컨텍스트를 지정하지 않았으므로, 콜백 함수 내의 this는 전역 객체
+ - addEventListener를 통해 등록된 콜백 함수 내에서 this는 이벤트를 발생시킨 HTML 요소
